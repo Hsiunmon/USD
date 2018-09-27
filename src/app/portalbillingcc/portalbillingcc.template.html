@@ -1,0 +1,107 @@
+<div class="usd-h55" >
+  <div class="usd-lm-w280"  >
+    Dashboard > Portal Billing CC
+  </div>
+  <div class="usd-lm-w350" >
+    <a class="usd-mailscans usd-MT9 usd-ML9" ></a>
+  </div>
+</div>
+<div class="usd-1038x552  outside-box" >
+  <h5 class="top-title">Make Payment:</h5>
+  <span class="top-title-underwords">Forms of payments accepted currently is only credit card:</span>
+  <div class="inside-box clearfix">
+    <div class=" usd-kaa " >
+      <div class="usd-kaa-top">
+        <div class="inside-box-title">
+          Credit Card
+          <i class="fa fa-check-circle-o fr" aria-hidden="true"></i>
+        </div>
+        <div class="usd-kaa-form">
+          <!--第一行-->
+          <div class="clearfix">
+              <div class="item fl ">
+                <span>First Name</span>
+                <input type="text" class="item-input input-big" [(ngModel)]="C.firstname">
+              </div>
+              <div class="item fl">
+                <span>Last Name</span>
+                <input type="text" class="item-input input-big" [(ngModel)]="C.lastname">
+              </div>
+              <div class="fr" style="margin-top: 10px;">
+                <img src="assets/img/portalbillingcc/everycards.png" alt="">
+              </div>
+            </div>
+          <!--第一行结束-->
+          <!--第二行-->
+          <div class="clearfix">
+            <div class="item fl ">
+              <span>Address 1:</span>
+              <input type="text" class="item-input input-big" [(ngModel)]="C.Address1">
+            </div>
+            <div class="item fl">
+              <span>Address 2:</span>
+              <input type="text" class="item-input input-big" [(ngModel)]="C.Address2">
+            </div>
+            <div class="item fl">
+              <span>City:</span>
+              <input type="text" class="item-input " style="width: 135px;" [(ngModel)]="C.City">
+            </div>
+            <div class="item fl">
+              <span>State:</span>
+              <div class="selected-item"> <!--//纯css下拉框美化可以复用的组件-->
+                <select [(ngModel)]="C.state" (change)=" getOptions($event.target.value)"  name="first" class="selected">
+                  <!--<option value="">CN</option> //此处用的是value，而不是[value]-->
+                  <option *ngFor="let item of state,let i = index" [value]='item.id'>{{item.name}}</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="item fl" style="padding-right: 0;">
+              <span>Zipcode:</span>
+              <input type="text" class="item-input input-small" [(ngModel)]="C.zipcode">
+            </div>
+          </div>
+          <!--第二行结束-->
+          <div class="underline"></div>
+          <!--第三行-->
+          <div class="clearfix">
+            <div class="item fl ">
+              <span>Credit Card #:</span>
+              <input type="text" class="item-input input-large" [(ngModel)]="C.creditcard">
+            </div>
+            <div class="item fl">
+              <span>Expiration(xx/xx/xxxx):</span>
+              <input type="text" class="item-input input-middle" [(ngModel)]="C.expiration">
+            </div>
+            <div class="item fl">
+              <span>Security Code:</span>
+              <input type="text" class="item-input input-middle" [(ngModel)]="C.securitycode">
+            </div>
+          </div>
+          <!--第三行结束-->
+          <button class="payment-button" (click)="onNext()">Process Payment <i class="fa fa-angle-right fr" aria-hidden="true"></i> </button>
+        </div>
+      </div>
+      <!--下层-->
+      <div class="usd-kaa-bottom">
+        <h5 class="top-title">Data Fees:</h5>
+        <!--左边上层三个价格以及总价在这里~~~-->
+        <div class="usd-kaa-content " >
+          <div class="clearfix">
+            <p class="fl "> <i class="fa fa-check" aria-hidden="true"></i> Direct Mail</p> <p class="fr price">$29.99</p>
+          </div>
+          <div class="clearfix">
+            <p class="fl"> <i class="fa fa-check" aria-hidden="true"></i> Email</p> <p class="fr price">$29.99</p>
+          </div>
+          <div class="clearfix">
+            <p class="fl"> <i class="fa fa-check" aria-hidden="true"></i> Prul</p> <p class="fr price">$29.99</p>
+          </div>
+          <div class="gray-line"></div>
+          <div class="clearfix">
+            <p class="fl subtotal"> Sub Total</p> <p class="fr price" style="color: #519633;">$69.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

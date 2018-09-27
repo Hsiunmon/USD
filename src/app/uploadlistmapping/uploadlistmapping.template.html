@@ -1,0 +1,120 @@
+<div class="usd-h55">
+  <div class="usd-lm-w280">
+    Dashboard > Upload List Mapping
+  </div>
+  <div class="usd-lm-w350">
+    <a class="usd-mailscans usd-MT9 usd-ML9"></a>
+  </div>
+</div>
+
+<div class="usd-669x617">
+
+  <div class="modal-dialog usd-507x242">
+    <form class="modal-content">
+      <div class="usd-header">
+        <a aria-hidden="true" data-dismiss="modal"><i class="fa fa-times"></i></a>
+      </div>
+      <div class="usd-modal-body" >
+        <h4>Map Your Headers</h4>
+        <div>
+          <span>You have 10 available header variables you can use in your creative. </span>
+          <br>
+          <span>Please assign the missing headers by clicking on the blank drop downs.</span>
+        </div>
+        <div class="choose-box row" >
+           <div class="col-md-6" style="padding-left: 20px" >
+             <h5 style="margin-left: 50px">Your Creative</h5>
+             <div class="select-content-box" style="padding-left: 45px;">
+               <div class="select-label">
+                 <span>1)</span>
+                 First Name
+               </div>
+               <div class="select-label">
+                 <span>2)</span>
+                 Last Name
+               </div>
+               <div class="select-label">
+                 <span>3)</span>
+                 Make
+               </div>
+               <div class="select-label">
+                 <span>4)</span>
+                 Model
+               </div>
+               <div class="select-label">
+                 <span>5)</span>
+                 address
+               </div>
+               <div class="select-label">
+                 <span>6)</span>
+                 city
+               </div>
+               <div class="select-label">
+                 <span>7)</span>
+                 state
+               </div>
+             </div>
+           </div>
+           <!--右边部分-->
+
+           <div class="col-md-6" style="padding-right: 20px" >
+             <h5 style="margin-right: 50px">Your Data</h5>
+             <div class="select-content-box">
+               <div class="selected-item"> <!--//纯css下拉框美化可以复用的组件-->
+                 <select [(ngModel)]="C.firstname" (change)=" getOptions($event.target.value)" name="first" class="selected">
+                   <option value="">First Name</option> //此处用的是value，而不是[value]
+                   <option *ngFor="let item of firstname,let i = index" [value]='item.id'>{{item.name}}</option>
+                 </select>
+               </div>
+               <div class="selected-item">
+                 <select [(ngModel)]="C.lastname" (change)="getOptions2($event.target.value)" name="first" class="selected">
+                   <option value="">Last Name</option>
+                   <option *ngFor="let item of Lastname,let i = index" [value]='item.id'>{{item.name}}</option>
+                 </select>
+               </div>
+               <div class="selected-item">
+                 <select [(ngModel)]="C.make"  name="first" class="selected" >
+                   <option value="">Make</option>
+                   <option *ngFor="let item of Make,let i = index" [value]='item.id'>{{item.name}}</option>
+                 </select>
+               </div>
+               <div class="selected-item">
+                 <select [(ngModel)]="C.model"  name="first" class="selected" >
+                   <option value="">Madel</option>
+                   <option *ngFor="let item of Madel,let i = index" [value]='item.id'>{{item.name}}</option>
+                 </select>
+               </div>
+               <div class="selected-item">
+                 <select [(ngModel)]="C.address"  name="first" class="selected">
+                   <option value="">Please Select</option>
+                   <option *ngFor="let item of address,let i = index" [value]='item.id'>{{item.name}}</option>
+                 </select>
+               </div>
+               <div class="selected-item">
+                 <select [(ngModel)]="C.city"  name="first" class="selected">
+                   <option value="">Please Select</option>
+                   <option *ngFor="let item of city,let i = index" [value]='item.id'>{{item.name}}</option>
+                 </select>
+               </div>
+               <div class="selected-item">
+                 <select [(ngModel)]="C.state"  name="first" class="selected">
+                   <option value="">Please Select</option>
+                   <option *ngFor="let item of state,let i = index" [value]='item.id' >{{item.name}}</option>
+                 </select>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+      <div>
+      </div>
+      <div class="usd-MB10">
+        <button type="button" class="usd-224x34 usd-39b54a " (click)="onNext()">Save and Continue   <i class="fa fa-angle-right "  aria-hidden="true"></i></button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+

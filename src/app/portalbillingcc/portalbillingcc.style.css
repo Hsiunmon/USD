@@ -1,0 +1,224 @@
+﻿
+.usd-h55 {
+  height:43.3070px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom:47.2440px;
+  margin-top:12px;
+  line-height:43.3070px;
+  font-size:9pt;
+}
+.usd-h55 a.usd-199x40 {
+  background-color:#3ab54a;
+  color:#ffffff;
+  height:31.4960px;
+  line-height:31.4960px;
+  width:156.6929px;
+  display:block;
+  text-align:center;
+  border-radius:4px;
+}
+
+.usd-h55 .usd-lm-w280 {
+  width:280px;
+  background-color:transparent;
+}
+
+.usd-h55  .usd-lm-w350 {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width:290px;
+}
+
+.usd-h55 .usd-ML9 {
+  margin-left:9px;
+}
+.usd-h55 .usd-MT9 {
+  margin-top:9px;
+}
+
+.outside-box {
+  width: 972px;
+  /*height: 552px;*/
+  height: 100%;
+  margin: 0px auto;
+}
+.outside-box .top-title{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 0;
+}
+.outside-box .top-title-underwords{
+  margin-bottom: 10px;
+  display: block;
+}
+.inside-box{
+  width: 100%;
+}
+/*左半边*/
+.inside-box .left-side{
+  width: 700px;
+  height: 100%;
+}
+
+.usd-kaa {
+  background-color:#ffffff;
+  border-radius:5px;
+  font-size:12pt;
+  color:#000000;
+  box-shadow: 0px 0px 8px 3px #e3e2e2;
+  display: block;
+  position: relative;
+  /*height: 204px;*/
+  width: 100%;
+  padding: 20px 30px;
+}
+.usd-kaa-content p{
+  margin-bottom: 5px;
+}
+
+.usd-kaa-content{
+
+}
+
+.gray-line{
+  height: 1px ;
+  width: 100%;
+  background-color: #c8c8c8;
+  margin: 10px 0;
+}
+.subtotal{
+  font-size: 24px;
+}
+.price{
+  font-size: 20px;
+}
+
+.inside-box-title{
+  height: 50px;
+  width: 100%;
+  background-color: #ffff00;
+  line-height: 50px;
+  text-indent: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+.inside-box-title .fa-check-circle-o{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+}
+.usd-kaa-form{
+  height: 370px;
+
+}
+.item{
+  padding: 10px;
+}
+.item-input{
+  display: block;
+  background-color: #eaeaea;
+  outline: #eaeaea;
+  text-indent: 2px;
+  height: 40px;
+  border: none;
+}
+.item span{
+  padding-left: 2px;
+}
+.input-big{
+  width: 260px;
+}
+.input-small{
+  width: 80px;
+}
+.input-large{
+  width: 350px;
+}
+.input-middle{
+  width: 195px;
+}
+.selected-item{
+  /*用div的样式代替select的样式*/
+  width: 80px;
+  height: 40px;
+  position: relative;
+  font-size: 12px;
+  background-color: #eaeaea;
+
+}
+
+.selected{
+  /*//清除select的边框样式*/
+  border: none;
+  /*//清除select聚焦时候的边框颜色*/
+  outline: none;
+  /*//将select的宽高等于div的宽高*/
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #eaeaea;
+  /*//隐藏select的下拉图标*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /*//通过padding-left的值让文字居中*/
+  padding-left: 20px;
+  /*居中修改*/
+
+}
+.selected-item:after{
+  content: "";
+  width: 14px;
+  height: 8px;
+  background: url('assets/img/uploadmapping/arrow.png') no-repeat center;
+  /*//通过定位将图标放在合适的位置*/
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  /*//给自定义的图标实现点击下来功能*/
+  pointer-events: none;
+}
+option{
+  background-color: #ffffff;
+}
+/*select下拉框通用样式结束END*/
+
+
+.select-label{
+  /*用div的样式代替select的样式*/
+  width: 80px;
+  height: 40px;
+  position: relative;
+  background-color: #eaeaea;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  font-size: 12px;
+}
+.usd-kaa-top .underline{
+  height: 2px;
+  width: 100%;
+  background-color: #e9e9e9;
+  margin-top: 30px;
+}
+ .payment-button{
+  height: 50px;
+  width: 260px;
+  background-color: #39b54a;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  outline: none;
+   margin: 10px;
+
+}
+ .payment-button .fa-angle-right{
+  color: #ffffff;
+  margin-right: 10px;
+  margin-top: 4px;
+}

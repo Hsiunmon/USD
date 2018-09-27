@@ -1,0 +1,12 @@
+<div class="form">
+    <h3 class="title">My Profile</h3>
+    <span class="reminder">Please fill out your profile and press “SAVE”.</span>
+    <div class="form-content">
+      <input type="text" [(ngModel)]="user.name" class="form-input" placeholder="John Doe">
+      <input type="text" [(ngModel)]="user.company" class="form-input" placeholder="Doe Industriers, LLC.">
+      <div class="account-box"><i class="pancel"></i><span class="account">jondoe@gmail.com</span></div>
+      <input type="text" [(ngModel)]="user.Password" class="form-input" placeholder="Password">
+      <input type="text" [(ngModel)]="user.ConfirmPassword" class="form-input" placeholder="Confirm Password">
+      <button class="save" (click)="onSelect()">Save</button>
+    </div>
+</div>

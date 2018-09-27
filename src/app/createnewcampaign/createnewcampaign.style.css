@@ -1,0 +1,141 @@
+﻿.usd-h55 {
+    height:43.3070px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom:47.2440px;
+    margin-top:12px;
+    line-height:43.3070px;
+    font-size:9pt;
+}
+
+.usd-h55 .usd-lm-w280 {
+    width:280px;
+    background-color:transparent;
+}
+
+.usd-h55  .usd-lm-w350 {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    width:290px;
+}
+
+.usd-h55 .usd-ML9 {
+    margin-left:9px;
+}
+.usd-h55 .usd-MT9 {
+    margin-top:9px;
+}
+
+.usd-mailscans {
+    background:#555555 url('assets/img/common/mailscan.png') no-repeat center 2px;
+    background-size:124.4094px 24.4094px;
+    width:124.4094px;
+    height:24.4094px;
+    border-radius:3px;
+    display:block;
+
+}
+
+.usd-863x717 {
+  width: 679.5275px;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.usd-863x717 ul{
+   list-style:none;
+   width:100%;
+   min-height:100px;
+   display:flex;
+   flex-wrap:wrap;
+   margin:0;
+   padding:0;
+}
+
+.usd-863x717 ul li.usd-263x361{
+   width:207.5118px;
+   height:284.2519px;
+   overflow:hidden;
+}
+
+.usd-863x717 ul li .img263x286 {
+    width:207.0866px;
+    height:225.1968px;
+
+}
+.usd-863x717 ul li .pf16{
+    color:#555555;
+    font-size:12px;
+    text-align:center;
+}
+
+.usd-MT40 {
+    margin-top:31.4960px;
+}
+
+.usd-MR33 {
+    margin-right:25.9842px;
+}
+.otherstyle{
+  height: 225px;
+  width: 207px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;
+}
+.otherstyle h5{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 0.1rem;
+  font-weight: 400;
+}
+
+.otherstyle span{
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+.otherstyle .item{
+  width: 102px;padding: 0 10px;
+}
+.footer-box{
+  background-color: #505050;
+  height: 40px;
+  width: 206px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+.footer-box i{
+  color: #fff;
+}
+.footer-box-button{
+  background-color: #39b54a;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  display: block;
+  width: 110px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-box .left-side{
+  margin-top: 10px;
+}
+.back-button{
+  border: none;
+  border-radius: 5px;
+  background-color: #505050;
+  outline: none;
+  color: #ffffff;
+  padding: 5px 10px;
+}

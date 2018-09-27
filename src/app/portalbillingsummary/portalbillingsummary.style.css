@@ -1,0 +1,180 @@
+﻿
+.usd-h55 {
+  height:43.3070px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom:47.2440px;
+  margin-top:12px;
+  line-height:43.3070px;
+  font-size:9pt;
+}
+.usd-h55 a.usd-199x40 {
+  background-color:#3ab54a;
+  color:#ffffff;
+  height:31.4960px;
+  line-height:31.4960px;
+  width:156.6929px;
+  display:block;
+  text-align:center;
+  border-radius:4px;
+}
+
+.usd-h55 .usd-lm-w280 {
+  width:280px;
+  background-color:transparent;
+}
+
+.usd-h55  .usd-lm-w350 {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width:290px;
+}
+
+.usd-h55 .usd-ML9 {
+  margin-left:9px;
+}
+.usd-h55 .usd-MT9 {
+  margin-top:9px;
+}
+
+.outside-box {
+  width: 972px;
+  /*height: 552px;*/
+  height: 100%;
+  margin: 0px auto;
+}
+.outside-box .top-title{
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 0;
+}
+.outside-box .top-title-underwords{
+  margin-bottom: 10px;
+  display: block;
+}
+.inside-box{
+  width: 100%;
+}
+
+.usd-kaa {
+  background-color:#ffffff;
+  border-radius:5px;
+  font-size:12pt;
+  color:#000000;
+  box-shadow: 0px 0px 8px 3px #e3e2e2;
+  display: block;
+  position: relative;
+  /*height: 204px;*/
+  width: 100%;
+  padding: 20px 30px;
+}
+
+
+
+ .payment-button{
+    height: 32px;
+    width: 181px;
+    background-color: #39b54a;
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    margin: 10px;
+    font-size:10px;
+    position:relative;
+    right:-32px;
+    top:-22px;
+}
+ .payment-button .fa-angle-right{
+  color: #ffffff;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+/* 正文开头 */
+.usd-kaa-top .usd-orderdetail .usd-orderdetail-top {
+    display:flex;
+    flex-direction:column;
+    padding-top:10px;
+}
+.usd-kaa-top .usd-orderdetail {
+    display:flex;
+    justify-content:space-between;
+    width:92%;
+    margin:auto;
+}
+.usd-kaa-top .usd-orderdetail ul{
+    list-style:none;
+    display:flex;
+    margin-right:51px;   
+}
+.usd-kaa-top .usd-orderdetail ul li{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+.usd-kaa-top .usd-orderdetail ul li img {
+    box-shadow: 0px 0px 8px 3px #ebebeb;
+}
+.usd-kaa-top .usd-orderdetail ul li label{
+    font-weight:bold;
+    text-align:center; 
+}
+ .usd-kaa-bottom .undertext{
+    font-size:12px;
+    margin:32px auto auto auto;
+    text-align:center;
+
+}
+.usd-kaa-bottom .undertext a{
+    text-decoration:underline;
+}
+.usd-kaa-bottom .usd-desc {
+   border-radius:3px;
+   padding:25px 35px;
+   background-color:#eaeaea;
+   width:92%;
+   margin:auto;
+}
+.usd-separator {
+    display:block;
+    border-left:1px solid #c3c3c3;
+    height:166px;
+    width:5px;
+    margin:25px auto auto auto;
+}
+.usd-orderdetail-tks {
+    margin-bottom: 15px;
+}
+.usd-orderdetail-count {
+    color:#ed1c24;
+    font-size:18px;
+}
+.usd-orderdetail-tks{
+    color:#529634;
+}
+.usd-orderdetail-oo {
+    display:flex;
+    justify-content:space-between;
+    color:#529634;
+}
+.usd-orderdetail-h4 {
+    font-size:1.5rem;
+}
+.usd-orderdetail-money {
+    letter-spacing: -1px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: .4;
+    margin-top:40px;
+}
+ 
+.usd-orderdetail-money .cents {    
+    font-size:15px;
+}
+
+/* 正文结尾 */

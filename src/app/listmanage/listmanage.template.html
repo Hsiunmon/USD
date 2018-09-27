@@ -1,0 +1,28 @@
+<div class="usd-h55" >
+    <div class="usd-lm-w280"  >
+        Dashboard > List and Campaign Manager
+    </div>
+    <div class="usd-lm-w350" >
+        <a class="usd-199x40 usd-MT9"  [routerLink]=" ['/app','createnewcampaign'] " > Create New Campaign > </a>
+        <a class="usd-mailscans usd-MT9 usd-ML9" ></a>
+    </div>
+</div>
+<div class="usd-979x538 container" >
+    <ul>
+        <li class="row usd-lm-title" >
+            List Manager:
+        </li>
+        <li class="row usd-lm-mt" >
+            <span class="col-md-2"> List Name </span>
+            <span class="col-md-4"> Date Added </span>
+            <span class="col-md-3" style="text-align:center;"> Industry </span>
+            <span class="col-md-3" style="background-color:transparent;text-align:center;"> Record Count #:</span>
+        </li>
+        <li class="row usd-kaa"  *ngFor="let list of lists; let i = index" >
+            <span class="col-md-2 "><a href="javascript:void(0);"> _<i class="fa fa-pencil usd-lm-pencil" aria-hidden="true"></i> {{list.name}} {{i+1}}</a></span>
+            <span class="col-md-4" >{{list.date}}</span>
+            <span class="col-md-3" style="text-align:center;">{{list.industry}}</span>
+            <span class="col-md-3" style="background-color:transparent;text-align:center;"> {{list.count}}</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,185 @@
+<div class="usd-h55">
+    <div class="usd-lm-w280">
+        Dashboard > Customize Direct Mail
+    </div>
+    <div class="usd-lm-w350">
+        <a class="usd-mailscans usd-MT9 usd-ML9"></a>
+    </div>
+</div>
+<div class="usd-1065x690">
+    <form class="fl usd-946x">
+        <div>Customize Your Message:</div>
+        <div class="usd-message-type usd-select" >
+            <div>
+                Direct Mail Campaign <sup>*Required</sup>
+            </div>
+            <div>
+                <i class="fa fa-check-circle-o" aria-hidden="true" ></i>
+            </div>
+        </div>
+        <div class="directmail-title">
+            <span>
+                <ng-template ngFor let-item [ngForOf]="photos" let-i="index">
+                    <a href="javascript:void(0);" (click)="onSelectPic(i+1)">
+                        <span *ngIf="i==0">
+                            <i class="fa fa-dot-circle-o" *ngIf="data.selectPic=='front'"></i>
+                            <i class="fa fa-circle-o" *ngIf="data.selectPic=='back'"></i>
+                        </span>
+                        <span *ngIf="i==1">
+                            <i class="fa fa-dot-circle-o" *ngIf="data.selectPic=='back'"></i>
+                            <i class="fa fa-circle-o" *ngIf="data.selectPic=='front'"></i>
+                        </span>
+                        {{item.name}}
+                    </a>
+                </ng-template>
+            </span>
+            <span>
+                <select [(ngModel)]="data.selectVersion" name="version" (change)="changeVersion($event.target.selectedOptions[0].text)" class="selected-item" >
+                    <option value="0" >Select Version</option>
+                    <option *ngFor="let item of versions,let i = index" [value]='item.ver'>{{item.ver}}</option>
+                </select>
+            </span>
+            <button (click)="onPop()" >
+                Approve & Continue >
+            </button>
+        </div>
+        <div class="directmail-body">
+            <div class="frontbackimgs">
+                <ng-template ngFor let-item [ngForOf]="photos" let-i="index">
+                    <img src="{{item.path}}" id="pic{{i+1}}" />
+                </ng-template>
+            </div>
+            <div class="usd-634x357">
+                <div class="usd-console usd-W80bi usd-H319" >
+                    <ng-template ngFor let-item [ngForOf]="data.selectForm" let-i="index"   >
+                        <div *ngIf="item.type=='color'"  >
+                            {{item.name}}:
+                            <ul class="usd-188x52" >
+                                <li style="background-color:#fb692f;"  (click)="item.value='#fb692f'"   >
+                                </li>
+                                <li style="background-color:#f8b736;"  (click)="item.value='#f8b736'"   >
+                                </li>
+                                <li style="background-color:#82dab7;"  (click)="item.value='#82dab7'"   >
+                                </li>
+                                <li style="background-color:#2bce88;"  (click)="item.value='#2bce88'"   >
+                                </li>
+                                <li style="background-color:#93d2f8;"  (click)="item.value='#93d2f8'"   >
+                                </li>
+                                <li style="background-color:#2596dd;"  (click)="item.value='#2596dd'"   >
+                                </li>
+                                <li style="background-color:#abb8c1;"  (click)="item.value='#abb8c1'"   >
+                                </li>
+                                <li style="background-color:#e52252;"  (click)="item.value='#e52252'"   >
+                                </li>
+                                <li style="background-color:#f38fa9;"  (click)="item.value='#f38fa9'"   >
+                                </li>
+                                <li style="background-color:#972ee6;"  (click)="item.value='#f38fa9'"   ></li>
+                                <li class="input-color"><label></label><input placeholder="#" maxlength="7" [(ngModel)]="item.value" name="color"  /></li>
+                            </ul>
+                        </div>
+                        <div *ngIf="item.type=='textarea'" >
+                            <div class="usd-introduction-text" >
+                                <label>{{item.name}}</label>
+                                <textarea [(ngModel)]="item.value" name="textarea"  ></textarea>
+                            </div>
+                        </div>
+                        <div  *ngIf="item.type=='html'"  >
+                            <div class="usd-introduction-text"  >
+                                <label>{{item.name}}</label>
+                                <div class="htmleditor" id="htmleditor{{i}}" ></div>
+                            </div>
+                        </div>
+                        <div *ngIf="item.type=='text'" >
+                            <div class="usd-subject-line">
+                                <label>{{item.name}}: </label>
+                                <input [(ngModel)]="item.value" name="text"  />
+                            </div>
+                        </div>
+                        <div *ngIf="item.type=='file'" >
+                            {{item.name}}:
+                            <div class="usd-upload-logo">
+                                <input type="file" (change)="uploadFile($event,item)" name="file" />
+                                {{item.name}}
+                            </div>
+                            <ng-template [ngIf]="item.value!=''">{{item.value.name}}</ng-template>   
+                        </div>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+        <div class="usd-message-type" (mouseover)="onMouseover($event)" (mouseout)="onMouseout($event)" >
+            <div>
+                Email Campaign <sup (click)="goCustomizepurl()" > *Skip this step</sup>
+            </div>
+            <div>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="usd-message-type" (mouseover)="onMouseover($event)" (mouseout)="onMouseout($event)">
+            <div>
+                PURL WebSite <sup (click)="goPayment()" >*Skip this step</sup>
+            </div>
+            <div>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+            </div>
+        </div>
+    </form>
+    <div class="usd-70x fr">
+        <div class="step">
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <span class="hyhy">Step 1</span>
+            <span class="hy">Direct Mail</span>
+            <span class="sl"> </span>
+        </div>
+        <div class="step">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            <span class="hyhy">Step 2</span>
+            <span class="hy"> Email</span>
+            <span class="sl"> </span>
+        </div>
+        <div class="step">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+            <span class="hyhy">Step 3</span>
+            <span class="hy"> PURL</span>
+        </div>
+    </div>
+</div>
+
+<!--第一个模态框-->
+<div class="modal fade" id="myPop" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog  usd-MW800">
+        <form class="modal-content">
+            <div class="fl icon">
+                <a aria-hidden="true" data-dismiss="modal" style="color: #bfbfbf;" ><i class="fa fa-envelope-open-o little-icon"></i></a>
+            </div>
+            <div class="fr icon">
+                <a aria-hidden="true" data-dismiss="modal"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="usd-modal-body">
+                <h4 style="font-weight: 600;" >Everything looking good?</h4>
+                <div class="choose-style">
+                    <span *ngFor="let item of allstyle; let i = index" (click)="changeIt(i)"><i class="fa fa-check-circle-o" aria-hidden="true" *ngIf="num == i "></i><i *ngIf="num != i " class="fa fa-circle-o" aria-hidden="true"></i>{{item.name}}</span>
+                </div>
+                <div class="choose-box row">
+                    <div class="usd-content-hobbing-area">
+                        <a class="usd-content-hobbing-prev" (click)="prev()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                        <div class="usd-content-hobbing-pics">
+                            <div class="usd-content-hobbing-pic" *ngFor="let item of pics">
+                                <p>{{item.name}}</p>
+                                <img src="{{item.path}}" alt="{{item.name}}" />
+                            </div>
+                        </div>
+                        <a class="usd-content-hobbing-next" (click)="next()" ><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+            <div class="usd-MB10">
+                <button type="button" class="usd-224x34 usd-39b54b fl" aria-hidden="true" data-dismiss="modal">Return to edit   </button>
+                <button type="button" class="usd-224x34 usd-39b54a fl" (click)="onNext()">Continue to Email Setup </button>
+            </div>
+         </form>
+    </div>
+</div>
+<!--第一个模态框结束-->

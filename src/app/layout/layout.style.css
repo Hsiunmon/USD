@@ -1,0 +1,79 @@
+﻿.usd-footer {
+    width:100%;
+    height:379.4109px;
+    background-color:#4e4e4e;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.usd-content-hobbing {
+    min-height:50px;
+    display:flex;
+    flex-direction:column;
+}
+
+.usd-content-hobbing .mk-title{
+    min-height:58.2677px;
+    line-height:50px;
+    text-align:center;  
+    color:#eaeaea;
+    font-size:16px;
+    margin-top:10px;
+}
+.usd-content-hobbing .usd-content-hobbing-area .swiper{
+    min-height:50px;
+    width:625.9842px;
+    
+    overflow:hidden;
+}
+.usd-content-hobbing .usd-content-hobbing-area{
+    min-height:50px;
+    display:flex;
+    flex-direction:row;
+    margin:0px auto;
+}
+.usd-content-hobbing .usd-content-hobbing-area .usd-content-hobbing-prev,.usd-content-hobbing .usd-content-hobbing-area .usd-content-hobbing-next  {   
+    width:52.7559px;
+    font-size:34.6456px;
+    padding-top:60px;
+    text-shadow:1px 1px 12px #787878;
+}
+.usd-content-hobbing .usd-content-hobbing-area .usd-content-hobbing-prev {   
+    text-align:left;
+}
+.usd-content-hobbing .usd-content-hobbing-area .usd-content-hobbing-next {
+    text-align:right;
+}
+.usd-content-hobbing .usd-content-hobbing-area .usd-content-hobbing-pics {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:725.9842px;
+    overflow:hidden;
+}
+
+.usd-content-hobbing .usd-content-hobbing-area .usd-content-hobbing-pic  {
+    text-align:center;
+    margin-right:16.5354px;
+}
+.usd-content-hobbing .usd-content-hobbing-area
+.usd-content-hobbing-pic img {
+    width:135.4330px;
+    height:146.4566px;
+}
+
+.usd-content-hobbing .usd-content-hobbing-area
+.usd-content-hobbing-pic p {
+    color:#ffffff;
+    font-size:9pt;
+}
+
+
+.usd-content-footer {
+    height:29.9212px;
+    color:#7b7b7b;
+    font-size:9pt;
+    text-align:center;
+}
+

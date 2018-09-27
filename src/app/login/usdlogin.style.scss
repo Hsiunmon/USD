@@ -1,0 +1,116 @@
+@import "../../scss/helpers";
+
+/***********************************/
+/**             LOGIN             **/
+/***********************************/
+
+.usd-login-footer{
+  background-color: transparent;
+  margin-bottom: 25px;
+  font-size: $font-size-mini;
+  color: #b2b2b2;
+  text-align: center;
+  @media (min-height: 600px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.usd-widget-login-container{
+  padding-top: 10%;
+}
+
+.usd-widget-login-logo{
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: $font-weight-normal;
+  .fa-circle{
+    font-size: 13px;
+    margin: 0 20px;
+  }
+}
+
+.usd-widget-login{
+  padding: 30px;
+  > header{
+    h1,h2,h3,h4,h5,h6{
+      font-weight: $font-weight-normal;
+      text-align: center;
+    }
+  }
+}
+
+.usd-widget-login-info{
+  font-size: $font-size-mini;
+  color: #888;
+  margin-top: 1px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.login-form{
+  .form-control{
+    font-size: $font-size-mini;
+    border: none;
+    background-color: $gray-200;
+    &:focus{
+      background-color: $gray-600;
+    }
+  }
+}
+
+.usd-widget-login {
+  padding: 30px;
+}
+
+.usd-widget > header {
+  padding: 24px 0px;
+  color:#eaeaea;
+  text-align: center;
+}
+
+.tac{
+  text-align: center;
+}
+
+.f14{
+  font-size: 14px;
+  color:#c1c1c1;
+}
+.c1{
+  color: #c1c1c1;
+}
+
+.fpmt{ margin-top: 28.3464px;}
+.usd-login-a-bg{
+  background-color: #f6eb0f;
+}
+.usd-login-w{
+  color:#474747;
+  font-size: 20.39px;
+  width: 355.855px;
+  height: 40.157px;
+  margin: 0 auto;
+}
+.usd-widget > header > h3 {
+  font-size:33.0472px;
+}
+.usd-widget > header > label {
+  font-size:17.7480px;
+
+}
+.usd-login-lock {
+  position:absolute;
+  top: 14px;
+  left:20px;
+  color:#595959;
+}
+.usd-login-por {
+  position: relative;
+}
+
+#exampleInputEmail1,
+#pswd{ padding-left: 20px; color:#474747; }

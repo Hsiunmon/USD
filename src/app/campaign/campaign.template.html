@@ -1,0 +1,70 @@
+
+<!--
+<h1 class="page-title" >
+    List Manage Page <small>Just like that</small>
+</h1>
+<div class="widget-container">
+    <p>Some page content 333. Feel free to place whatever you want here</p>
+    <p class="test">YUNYUNN</p>
+</div>
+-->
+
+
+<div class="usd-h55" >
+  <div class="usd-lm-w280"  >
+    Dashboard > List and Campaign Manager
+  </div>
+  <div class="usd-lm-w350" >
+    <a class="usd-199x40 usd-MT9"  [routerLink]=" ['/app','createnewcampaign'] " > Create New Campaign > </a>
+    <a class="usd-mailscans usd-MT9 usd-ML9" ></a>
+  </div>
+</div>
+<div class="usd-979x538 container outside-box" >
+  <ul>
+    <!--<li class="row usd-lm-title" >-->
+      <!--<span>Campaign Manager:</span>-->
+      <!--<span class="fr"> <i>○</i>  Campaigns</span>-->
+      <!--<span class="fr"> <i>○</i> Lists</span>-->
+    <!--</li>-->
+    <!--
+      <li class="row usd-kaa "  *ngFor="let list of lists; let i = index" >-->
+      <!--<span class="col-md-2 "><a href="javascript:void(0);"> _<i class="fa fa-pencil usd-lm-pencil" aria-show="true"></i> {{list.name}} {{i+1}}</a></span>-->
+      <!--<span class="col-md-4"> {{list.date}}</span>-->
+      <!--<span class="col-md-3" style="text-align:center;">{{list.industry}}</span>-->
+      <!--<span class="col-md-3" style="background-color:transparent;text-align:center;"> {{list.count}}</span>-->
+    <!--</li>-->
+
+
+    <li class="row usd-kaa "  *ngFor="let user of lists,let i = index" >
+      <div class="little-pic fl" *ngIf="show != i"  ></div>
+      <span class="col-md-4 left-title">{{user.name}}</span>
+      <span class="fr col-md-1 arrow" (click)="onSelect(user,i)" [attr.data]="true"> <i class="fa fa-chevron-down" *ngIf="show != i"></i>
+        <i class="fa fa-chevron-up" *ngIf="show == i"></i>
+      </span>
+      <div class="usd-kaa-content clearfix" *ngIf="show == i">
+        <div class="fl photo-image"></div>
+        <div class="fl colom-first">
+          <h4 style="margin-left: 20px;" >Campaign Veritcals:</h4>
+          <ul >
+            <li class="clearfix"><div class="fl " ><i class="fa fa-envelope-open-o little-icon" ></i><span >Direct Mail</span></div> <button class="fr">View Proof</button></li>
+            <li class="clearfix"><div class="fl " ><i class="fa fa-envelope little-icon" ></i><span>Email</span></div> <button class="fr">View Proof</button></li>
+            <li class="clearfix"><div class="fl " ><i class="fa fa-globe little-icon" ></i><span>PURL</span></div> <button class="fr">View Proof</button></li>
+          </ul>
+        </div>
+        <div class="fl colom-second">
+          <h4  >Lists Attached:</h4>
+          <ul>
+            <li class="records">List12072 (322,000 Records)</li>
+            <li class="records">List12072 (322,000 Records)</li>
+            <li class="records">List12072 (322,000 Records)</li>
+          </ul>
+        </div>
+        <div class="fl colom-third">
+          <div >Industry: Auto Warranty</div>
+          <div>Date Created: {{user.dateCreated}} </div>
+          <div>Sent on: {{user.dateSend}}</div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

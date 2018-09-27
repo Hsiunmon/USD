@@ -1,0 +1,35 @@
+﻿1. 安装npm ，node分别最新版本   安装python2.7             见链接 https://jingyan.baidu.com/article/ac6a9a5e396e742b653eaccb.html
+3. 安装Angular5.2            见链接 https://blog.csdn.net/husong_/article/details/80210840
+4. 在源码项目根目录下 shift+右键打开命令行输入 cnpm install 回车
+5. 自动安装项目依赖源码包后继续在命令行输入  ng serve --o    回车
+6. 熟悉angular5.2 版本的USD 项目运行与源码
+
+
+
+# SingCli
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -1,0 +1,25 @@
+<div class="sidebar-top">
+    <a (click)="toggleSidebar('static')">
+        <img class="sidebar-top-margin" src="assets/img/sidebar/menu.png">
+    </a>
+</div>
+<div class="my-sidebar-nav">
+    <p>
+        <a [routerLink]=" ['dashboard'] "> Dashboard</a>
+    </p>
+    <p>
+        <a [routerLink]=" ['/app','campaign'] ">Campaign Manage </a>
+    </p>
+    <p>
+        <a [routerLink]=" ['/app','listmanage'] ">List Manage </a>
+    </p>
+    <p>
+        <a [routerLink]=" ['/app','creativelibrary'] " >Creative Library</a>
+    </p>
+    <p>
+        <a [routerLink]=" ['userprofile'] "> My Profile</a>
+    </p>
+    <p>
+        <a [routerLink]=" ['/login'] "> Logout</a>
+    </p>
+</div>

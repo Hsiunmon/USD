@@ -1,0 +1,57 @@
+<div class="usd-h55" >
+  <div class="usd-lm-w280"  >
+    Dashboard > Portal Billing Summary
+  </div>
+  <div class="usd-lm-w350" >
+  </div>
+</div>
+<div class="usd-1038x552  outside-box" >
+  <h5 class="top-title" >Track Results and Payment Summary:</h5>
+  <span class="top-title-underwords"></span>
+  <div class="inside-box clearfix">
+    <div class=" usd-kaa " >
+      <div class="usd-kaa-top">
+          <div class="usd-orderdetail-oo"  >
+              <div>
+                  <div class="usd-orderdetail-h4" >Your payment was Approved!</div>
+                  <div class="usd-orderdetail-ooo">Here is your campaign summary:</div>
+              </div>
+              <button class="payment-button" (click)="onNext()" >Return to Dashboard <i class="fa fa-angle-right fr" aria-hidden="true"></i> </button>
+          </div>    
+          <div class="usd-orderdetail" >
+              <div class="usd-orderdetail-top" >
+                  <div class="usd-orderdetail-tks">
+                      Thank you for choosing US Direct. Your order has been placed and will be processed soon. 
+                  </div>
+                  <h2 class="usd-orderdetail-count" >1,100,000 Records</h2>
+                  <div class="usd-orderdetail-money">US {{data.AmountCharged.split('.')[0]}}<sub class="cents">.{{data.AmountCharged.split('.')[1]}}</sub></div>
+                  
+              </div>
+              <div class="usd-separator"></div>
+              <ul>
+                  <li><label>Direct Mail</label><img src="assets/img/portalbillingsummary/directmail.jpg" /></li>
+                  <li><label>Email</label><img src="assets/img/portalbillingsummary/email.jpg" /></li>
+                  <li><label>PURL</label><img src="assets/img/portalbillingsummary/purl.jpg" /></li>
+              </ul>
+          </div>
+      </div>
+      <!--下层-->
+      <div class="usd-kaa-bottom">
+        <div class="usd-desc " >
+            Payment confirmation #: {{data.PaymentConfirmation}}
+            <br />
+            Amount Charged: {{data.AmountCharged}}
+            <br />
+            Date of Payment: {{data.PaymentDate| date: "MM/dd/y"}}
+            <br />
+            Payment source: {{data.PaymentSource}}
+            <br />
+            Name: {{data.Name}}
+            <br />
+            Email: {{data.Email}}
+        </div>
+        <div class="undertext" >The date provided above is the next available date. If you wish to make a request for a sooner date,you may email our support by <a class="underline">clicking here</a> </div>
+      </div>
+    </div>
+  </div>
+</div>

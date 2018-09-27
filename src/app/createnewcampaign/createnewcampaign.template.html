@@ -1,0 +1,66 @@
+<div class="usd-h55">
+    <div class="usd-lm-w280">
+        Dashboard > Select Creative
+    </div>
+    <div class="usd-lm-w350" >
+        <a class="usd-mailscans usd-MT9 usd-ML9"  ></a>
+    </div>
+</div>
+<div class="usd-863x717" *ngIf="num == 0">
+    <div>Select one of our mortgage templates or upload your own creative for approval...</div>
+    <ul>
+        <li  (click)="onSelect(item,item.Pid)" *ngFor="let item of creativelibrarys; let i = index" class="usd-MT40" [ngClass]="{'usd-MR33':i % 3!=2}" >
+            
+            <img src="{{item.path}}" alt="{{item.name}}" class="img263x286" />
+            <p class="pf16">{{item.name}}</p>
+        </li>
+    </ul>
+</div>
+<!--第二层-->
+<div class="usd-863x717" *ngIf="num == 1">
+  <div>Select one of our mortgage templates or upload your own creative for approval...</div> <button class="back-button" (click)="back()">back</button>
+  <ul>
+    <li  (click)="onSelect2(item,item.Pid)" *ngFor="let item of selectlibrarys2; let i = index" class="usd-MT40" [ngClass]="{'usd-MR33':i % 3!=2}" >
+
+      <img src="{{item.path}}" alt="{{item.name}}" class="img263x286" />
+      <p class="pf16">{{item.name}}</p>
+    </li>
+  </ul>
+</div>
+<!--第三层-->
+<div class="usd-863x717" *ngIf="num == 2">
+  <div >Start with our industry templates or your uploaded creative.</div> <button class="back-button" (click)="back()">back</button>
+  <ul>
+    <li *ngFor="let item of selectlibrarys3; let i = index" class="usd-MT40" [ngClass]="{'usd-MR33':i % 3!=2}" (mouseleave)="close()" (mouseenter)="otherSideShow(i)">
+      <div *ngIf="show2 != i">
+        <img src="{{item.path}}" alt="{{item.name}}" class="img263x286" />
+        <p class="pf16">{{item.name}}</p>
+      </div>
+      <div  class="otherstyle" *ngIf="show2 == i">
+        <div class="fr " style="margin-right: 10px;">
+          _<i class="fa fa-pencil usd-lm-pencil" aria-hidden="true"></i>
+        </div>
+        <h5>Your Approved Creatives</h5>
+        <span>Name: EWS20180910</span>
+        <div class="clearfix">
+          <div class="fl item" >
+            <img class="otherstyle-pic" width="80px" height="100px" src="assets/img/creativeLibrary/DirectMail.png" alt="">
+            <span>Direct Mail</span>
+          </div>
+          <div class="fl item" >
+            <img class="otherstyle-pic" width="80px" height="100px" src="assets/img/creativeLibrary/email.png" alt="">
+            <span>Email</span>
+          </div>
+        </div>
+        <div class="footer-box">
+          <div class="left-side fl">
+            <i class="fa fa-envelope-open-o " aria-hidden="true" style="margin: 0 5px 0 10px;"></i>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <a class="footer-box-button fr "  [routerLink]=" ['/app','uploadlist',{id:item.id}]"  > Upload List > </a>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>

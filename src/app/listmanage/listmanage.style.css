@@ -1,0 +1,97 @@
+﻿
+.usd-h55 {
+    height:43.3070px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom:47.2440px;
+    margin-top:12px;
+    line-height:43.3070px;
+    font-size:9pt;
+}
+.usd-h55 a.usd-199x40 {
+    background-color:#3ab54a;
+    color:#ffffff;
+    height:31.4960px;
+    line-height:31.4960px;
+    width:156.6929px;
+    display:block;
+    text-align:center;
+    border-radius:4px;
+}
+
+.usd-h55 .usd-lm-w280 {
+    width:280px;
+    background-color:transparent;
+}
+
+.usd-h55  .usd-lm-w350 {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:290px;
+}
+
+.usd-h55 .usd-ML9 {
+    margin-left:9px;
+}
+.usd-h55 .usd-MT9 {
+    margin-top:9px;
+}
+
+.usd-979x538 {
+   width: 781.8661px;
+   height:429.6220px;  
+   margin:0px auto;
+}
+
+.usd-kaa {
+    background-color:#ffffff;
+    height:31.4960px;
+    border-radius:4px;
+    margin-bottom:5.5118px;
+    line-height:31.4960px;
+    font-size:9pt;
+    color:#000000;
+}
+
+.usd-kaa a {
+    text-decoration:none;
+    color:#000000;
+}
+
+.usd-979x538 ul {
+    list-style-type:none;
+}
+
+.usd-979x538 ul li {
+    list-style-type:none;
+}
+
+.usd-lm-tsc {
+   text-align:center;
+}
+
+.usd-lm-pencil {
+    line-height:23px;
+    position:relative;
+    top:-1px;
+}
+
+.usd-lm-mt {
+    height:31.4960px;
+}
+
+.usd-lm-title {
+    height:33.0708px;
+}
+
+.usd-mailscans {
+    background:#555555 url('assets/img/common/mailscan.png') no-repeat center 2px;
+    background-size:124.4094px 24.4094px;
+    width:124.4094px;
+    height:24.4094px;
+    border-radius:3px;
+    display:block;
+}

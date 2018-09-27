@@ -1,0 +1,156 @@
+<div class="usd-h55">
+  <div class="usd-lm-w280">
+    Dashboard > Creative Library
+  </div>
+  <div class="usd-lm-w350">
+    <a class="usd-PT75" data-toggle="modal" data-target="#myModal">
+      <p>第一<i class="fa fa-plus" aria-hidden="true"></i></p>
+
+    </a>
+    <a class="usd-PT75" (click)="onModal2()">
+      <p>第二<i class="fa fa-plus" aria-hidden="true"></i></p>
+
+    </a>
+    <a class="usd-PT75" (click)="onModal3()">
+      <p>第三<i class="fa fa-plus" aria-hidden="true"></i></p>
+
+    </a>
+  </div>
+
+</div>
+
+<!--地一个模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class=" modal-dialog usd-607x242">
+    <form class="modal-content">
+        <div class="fl icon">
+          <a aria-hidden="true" data-dismiss="modal"  style="color: #bfbfbf;"><i class="fa fa-envelope-open-o little-icon"></i></a>
+        </div>
+        <div class="fr icon" >
+          <a aria-hidden="true" data-dismiss="modal" ><i class="fa fa-times"></i></a>
+        </div>
+
+      <div class="usd-modal-body">
+        <h4 style="font-weight: 600;">Everything looking good?</h4>
+        <div class="choose-style">
+          <span *ngFor="let item of allstyle; let i = index" (click)="changeIt(i)"><i class="fa fa-check-circle-o" aria-hidden="true" *ngIf="num == i "></i><i *ngIf="num != i " class="fa fa-circle-o" aria-hidden="true"></i>{{item.name}}</span>
+          <!--<span><i class="fa fa-check-circle-o" aria-hidden="true" *ngIf="num"></i><i class="fa fa-circle-o" aria-hidden="true"></i>Back</span>-->
+          <!--<span><i class="fa fa-check-circle-o" aria-hidden="true" *ngIf="num"></i><i class="fa fa-circle-o" aria-hidden="true"></i>Envelope</span>-->
+        </div>
+        <div class="choose-box row">
+          <div class="usd-content-hobbing-area" >
+            <a class="usd-content-hobbing-prev"  (click)="prev()" ><i class="fa fa-chevron-left" aria-hidden="true" ></i></a>
+            <div class="usd-content-hobbing-pics">
+              <div class="usd-content-hobbing-pic" *ngFor="let item of pics">
+                <p>{{item.name}}</p>
+                <img src="{{item.path}}" alt="{{item.name}}" />
+              </div>
+            </div>
+
+            <a class="usd-content-hobbing-next" (click)="next()" ><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      </div>
+      <div class="usd-MB10" >
+        <button type="button" class="usd-224x34 usd-39b54b fl" aria-hidden="true" data-dismiss="modal">Return to edit   </button>
+        <button type="button" class="usd-224x34 usd-39b54a fl"  (click)="onNext()">Continue to Email Setup </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+<!--地一个模态框结束-->
+<!--第二个模态框-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class=" modal-dialog usd-607x242">
+    <form class="modal-content">
+      <div class="fl icon">
+        <a aria-hidden="true" data-dismiss="modal"  style="color: #bfbfbf;"><i class="fa fa-envelope little-icon"></i></a>
+      </div>
+      <div class="fr icon" >
+        <a aria-hidden="true" data-dismiss="modal" ><i class="fa fa-times"></i></a>
+      </div>
+
+
+
+      <div class="usd-modal-body">
+        <h4 style="font-weight: 600;">Everything looking good?</h4>
+        <div class="">
+          <span style="font-weight: 600;">Subject Line:</span><span> Save up to 60% on Auto Warranty</span>
+        </div>
+        <div class="choose-box row">
+          <div class="usd-content-hobbing-area" >
+            <a class="usd-content-hobbing-prev"  (click)="prev2()" ><i class="fa fa-chevron-left" aria-hidden="true" ></i></a>
+            <div class="usd-content-hobbing-pics">
+              <div class="usd-content-hobbing-pic" *ngFor="let item of pics2">
+                <img src="{{item.path}}" alt="{{item.name}}" />
+              </div>
+            </div>
+
+            <a class="usd-content-hobbing-next" (click)="next2()" ><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      </div>
+      <div class="usd-MB10" >
+        <button type="button" class="usd-224x34 usd-39b54b fl" aria-hidden="true" data-dismiss="modal">Return to edit   </button>
+        <button type="button" class="usd-224x34 usd-39b54a fl" (click)="onNext2()">Continue to PURL Setup </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+<!--第二个模态框结束-->
+<!--第三个模态框-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class=" modal-dialog usd-607x242">
+    <form class="modal-content">
+      <div class="fl icon">
+        <a aria-hidden="true" data-dismiss="modal"  style="color: #bfbfbf;"><i class="fa fa-globe little-icon"></i></a>
+      </div>
+      <div class="fr icon" >
+        <a aria-hidden="true" data-dismiss="modal" ><i class="fa fa-times"></i></a>
+      </div>
+      <div class="usd-modal-body">
+        <h4 style="font-weight: 600;">Everything looking good?</h4>
+        <div class="" style="visibility: hidden;">
+          <span style="font-weight: 600;">Subject Line:</span><span> Save up to 60% on Auto Warranty</span>
+        </div>
+        <div class="choose-box row">
+          <div class="usd-content-hobbing-area" >
+            <a class="usd-content-hobbing-prev"  (click)="prev3()" ><i class="fa fa-chevron-left" aria-hidden="true" ></i></a>
+            <div class="usd-content-hobbing-pics">
+              <div class="usd-content-hobbing-pic" *ngFor="let item of pics3">
+                <img src="{{item.path}}" alt="{{item.name}}" />
+              </div>
+            </div>
+
+            <a class="usd-content-hobbing-next" (click)="next3()" ><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      </div>
+      <div class="usd-MB10" >
+        <button type="button" class="usd-224x34 usd-39b54b fl" aria-hidden="true" data-dismiss="modal">Return to edit   </button>
+        <button type="button" class="usd-224x34 usd-39b54a fl" (click)="onNext()">Continue to Approve Campaign </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+<!--第三个模态框结束-->
+
+<div style="width: 70%; margin: auto; padding: 50px;">
+    <textarea id="content68" name="content68">
+        <h2>Hello and Welcome</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </textarea>
+</div>

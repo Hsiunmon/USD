@@ -1,0 +1,34 @@
+<div class="usd-h55">
+    <div class="usd-lm-w280">
+        Dashboard > Upload List Report
+    </div>
+    <div class="usd-lm-w350">
+        <a class="usd-mailscans usd-MT9 usd-ML9"></a>
+    </div>
+</div>
+
+<div class="modal-dialog usd-507x308">
+    <form class="modal-content">
+        <div class="usd-header">
+        </div>
+        <div class="usd-modal-body">
+            <h4>Your Data Report</h4>
+            <div class="usd-311x108">
+                <span>
+                    <ng-template ngFor let-item [ngForOf]="myReport" let-i="index" [ngForTrackBy]="trackByFn">
+                        <label class="usd-W189"> {{item.name}}: </label>
+                        <label class="usd-W97">{{item.count}}</label>
+                    </ng-template>
+                </span>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="usd-MB5">
+            <button type="button" class="usd-223x35 usd-39b54a " (click)="onNext()" >Continue to Map Your Headers <i class="fa fa-angle-right " aria-hidden="true"></i></button>
+        </div>
+        <div class="usd-MB10">
+            <button type="button" class="usd-223x35 usd-545454 " (click)="onExport()">Export Data   <i class="fa fa-angle-right " aria-hidden="true" ></i></button>
+        </div>
+    </form>
+</div>

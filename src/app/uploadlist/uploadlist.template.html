@@ -1,0 +1,76 @@
+<div class="usd-h55">
+  <div class="usd-lm-w280">
+    Dashboard > Upload List
+  </div>
+  <div class="usd-lm-w350">
+    <a class="usd-mailscans usd-MT9 usd-ML9"></a>
+  </div>
+</div>
+
+<div class="usd-863x717">
+  <div class="title">Upload New List or Use a Previously Uploaded List</div>
+  <div class="modal-dialog usd-507x242">
+    <form class="modal-content" >
+      <div class="usd-header">
+        <!--<a aria-hidden="true" data-dismiss="modal"><i class="fa fa-times"></i></a>-->
+      </div>
+      <div class="usd-modal-body">
+        Please Upload Your List
+        <br />
+        in CSV format.
+        <div class="usd-348x139">
+          <input type="file" id="usdfile" (change)="uploadFile($event)" />
+          <div class="usd-FS18">Add Your List</div>
+          <a href="javascript:void(0);" class="usd-219x40">{{chooseFile}}</a>
+          <span class="usd-FS15">or drag and drop your file to upload</span>
+        </div>
+      </div>
+      <!--<div class="form-group px-4 py-3">-->
+        <!--<label for="usdName">Select </label>-->
+        <!--<select class="form-control" id="usdSelect" [(ngModel)]="uploadfrm.select" required name="select">-->
+          <!--<option>111111</option>-->
+          <!--<option>222222</option>-->
+          <!--<option>333333</option>-->
+        <!--</select>-->
+      <!--</div>-->
+      <!--<div class="form-group px-4 py-3">-->
+        <!--<label for="usdName">Name</label>-->
+        <!--<input type="text" class="form-control" id="usdName" placeholder="Name" [(ngModel)]="uploadfrm.name" name="name">-->
+      <!--</div>-->
+      <!--<div class="form-group px-4 py-3">-->
+        <!--<label for="usdRemark">Remark</label>-->
+        <!--<textarea placeholder="Remark" id="usdRemark" class="form-control" [(ngModel)]="uploadfrm.remark" name="remark"></textarea>-->
+      <!--</div>-->
+      <div>
+      </div>
+      <div class="usd-MB10">
+        <button type="button" class="usd-224x34 usd-39b54a " (click)="onNext()">Contince to map Your Headers </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog usd-507x242">
+    <div class="usd-header" >
+      <a aria-hidden="true" data-dismiss="modal" ><i class="fa fa-times"></i></a>
+    </div>
+    <div class="usd-note usd-FS16">
+      Your creatives looks great!
+      <br />
+      One of our representatives will look
+      <br />
+      over your creatives to see if it's
+      <br />
+      ready for customization.
+    </div>
+    <div class="usd-MB10" >
+      <button type="button" class="usd-224x34 usd-545454 usd-FS15" data-dismiss="modal" >Close and Return to Dashboard</button>
+    </div>
+  </div>
+</div>

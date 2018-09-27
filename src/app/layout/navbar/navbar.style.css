@@ -1,0 +1,80 @@
+﻿.my-navbar {
+    background-color:#525252;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.my-navbar-left {
+    vertical-align:top;
+    width:150px;
+    position:absolute;
+    left:0px;
+}
+.my-navbar-left .fl{
+    float:left;
+}
+
+.my-navbar-left .fr{
+    float:left;
+}
+
+.my-navbar-left .menu2 {
+    width:31.4960px;
+    margin-top:20.4724px;
+    margin-left:19.6850px;
+}
+
+.my-navbar-left .logo {
+    width:77.1653px;
+    margin-top:20.4724px;
+    margin-left:19.6850px;
+}
+
+.my-navbar-link {
+    width:auto;
+    display:flex;
+    margin:74.0157px auto auto auto;
+}
+
+.my-navbar-link a {
+   color:#fff;
+   line-height:22px;
+   margin-left:35px;
+   margin-right:35px;
+   text-decoration:none;
+   padding: 7.8470px 12.5984px 9.6488px 12.5984px;
+}
+
+.my-navbar-link a.active,.my-navbar-link a:hover {
+  color:#545454;
+  border-radius: 3px 3px 0 0;
+  background-color:#ffff00;
+  box-shadow:0px -1px 2px #eeee00 inset;
+
+}
+
+.my-navbar-link a i {
+   position:relative;
+   top:-1px;
+}
+
+
+.my-navbar-right {
+    vertical-align:top;
+    width:150px;
+    position:absolute;
+    right:39px;
+}
+
+.my-navbar-right .logo {
+    width:77.1653px;
+    margin-top:20.4724px;
+    margin-left:19.6850px;
+}
+
+.my-navbar-right .menu2 {
+    width:31.4960px;
+    margin-top:20.4724px;
+    margin-left:19.6850px;
+}

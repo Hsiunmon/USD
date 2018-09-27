@@ -1,0 +1,90 @@
+<div class="usd-h55">
+    <div class="usd-lm-w280">
+        Dashboard > Creative Library
+    </div>
+    <div class="usd-lm-w350">
+        <a class="usd-mailscans usd-MT9 usd-ML9"></a>
+    </div>
+</div>
+<div class="usd-863x717">
+    <div>Select one of our mortgage templates or upload your own creative for approval...</div>
+    <ul>
+        <li *ngFor="let item of creativelibrarys; let i = index" class="usd-MT40" [ngClass]="{'usd-MR33':i % 3!=2}" >
+            <img src="{{item.path}}" alt="{{item.name}}" class="img263x286" />
+            <p class="pf16">{{item.name}}</p>
+        </li>
+        <li>
+            <div class="usd-btn-white img263x286 usd-MT40">
+                <a class="usd-PT75" data-toggle="modal" data-target="#myModal">
+                    <p><i class="fa fa-plus" aria-hidden="true"></i></p>
+                    Upload Your Creative for Approval
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+    <div class="modal-dialog usd-507x242">
+        <form class="modal-content">
+            
+            <div class="usd-header" >
+                <a aria-hidden="true" data-dismiss="modal" ><i class="fa fa-times" ></i></a>
+            </div>
+
+            <div class="usd-modal-body">
+                Please Upload Your Creative
+                <br />
+                in JPG, GIF, Illustrator, Word, Excel, PDF
+                <div class="usd-348x139">
+                    <input type="file" id="usdfile" (change)="uploadFile($event)" />
+                    <div class="usd-FS18">Add Direct Mail Creative</div>
+                    <a href="javascript:void(0);" class="usd-219x40">{{chooseFile}}</a>
+                    <span class="usd-FS15">or drag and drop your file to upload</span>
+                </div>
+            </div>
+            <div class="form-group px-4 py-3">
+                <label for="usdName">Select </label>
+                <select class="form-control" id="usdSelect" [(ngModel)]="uploadfrm.select" required name="select">
+                    <option *ngFor="let opt of opts" >{{opt.name}}</option>
+                </select>
+            </div>
+            <div class="form-group px-4 py-3">
+                <label for="usdName">Name</label>
+                <input type="text" class="form-control" id="usdName" placeholder="Name" [(ngModel)]="uploadfrm.name" name="name">
+            </div>
+            <div class="form-group px-4 py-3">
+                <label for="usdRemark">Remark</label>
+                <textarea placeholder="Remark" id="usdRemark" class="form-control" [(ngModel)]="uploadfrm.remark" name="remark"></textarea>
+            </div>
+            <div>
+            </div>
+            <div class="usd-MB10">
+                <button type="button" class="usd-224x34 usd-39b54a " (click)="onNext()">Save </button>
+            </div>
+            <div class="usd-MB10">
+                <button type="button" class="usd-224x34 usd-535353 " data-dismiss="modal">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog usd-507x242">
+        <div class="usd-header" >
+            <a aria-hidden="true" data-dismiss="modal" ><i class="fa fa-times"></i></a>
+        </div>
+        <div class="usd-note usd-FS16">
+            Your creatives looks great! 
+            <br />
+             One of our representatives will look 
+            <br />
+            over your creatives to see if it's
+            <br />
+             ready for customization.
+        </div>
+        <div class="usd-MB10" >
+            <button type="button" class="usd-224x34 usd-545454 usd-FS15" data-dismiss="modal" >Close and Return to Dashboard</button>
+        </div>
+    </div>
+</div>
